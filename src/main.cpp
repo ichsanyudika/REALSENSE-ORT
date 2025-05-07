@@ -11,8 +11,8 @@ float confThreshold = 0.5f;
 float iouThreshold = 0.5f;
 float maskThreshold = 0.6f;
 
-std::string modelPath = "/home/ichan/Documents/realSense_OnnxRT/models/zed_obs.onnx";
-std::string classNamesPath = "/home/ichan/Documents/realSense_OnnxRT/models/coconames.txt";
+std::string modelPath = "/home/ichan/Documents/projects/realsense_ort/models/zed_obs.onnx";
+std::string classNamesPath = "/home/ichan/Documents/projects/realsense_ort/models/coconames.txt";
 bool isGPU = true;
 
 int main() {

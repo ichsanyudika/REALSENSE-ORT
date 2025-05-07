@@ -59,3 +59,7 @@ Place the ONNX model file in the models/ directory of this project.
     
     # Step 3: Run the application
     ./cam
+
+#### 📸 **Results**
+
+![](output/output.png) 

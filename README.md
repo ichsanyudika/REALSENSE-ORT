@@ -49,13 +49,13 @@ Place the ONNX model file in the models/ directory of this project.
 ### ⚙️ Build and Run
 
     # Step 1: Clone this repository
-    git clone https://github.com/ichsanyudika/realsense_yolo_onnx_runtime.git
+    git clone https://github.com/ichsanyudika/realsense_ort.git
     
     # Step 2: Build the application
-    cd realsense_yolo_onnx_runtime
+    cd realsense_ort
     mkdir build && cd build
     cmake ..
     make
     
     # Step 3: Run the application
-    ./yolo_cam
+    ./cam

@@ -1,9 +1,9 @@
-#### 🚀 Getting Started
+## 🚀 Getting Started
 ### 🛠️ Prerequisites
 
 Before you can run the project, you'll need to install a few dependencies and set up your environment.
 
-✅ 1. Install OpenCV with Contrib Modules (C++)
+#### ✅ 1. Install OpenCV with Contrib Modules (C++)
 
 OpenCV will be used for image processing and object detection tasks
 
@@ -24,13 +24,13 @@ OpenCV will be used for image processing and object detection tasks
     sudo make install
     pkg-config --modversion opencv4
 
-✅ 2. Install Intel RealSense SDK
+#### ✅ 2. Install Intel RealSense SDK
 
 To interact with the RealSense camera, you will need to install the RealSense SDK. Follow the official guide for your platform:
 
 👉 Intel RealSense SDK Installation Guide
 
-✅ 3. Install ONNX Runtime
+#### ✅ 3. Install ONNX Runtime
 
 ONNX Runtime is used to run the YOLO model in an optimized manner.
 
@@ -40,13 +40,13 @@ ONNX Runtime is used to run the YOLO model in an optimized manner.
     # Step 2: Install ONNX Runtime (optional, Python version)
     pip install onnxruntime
 
-✅ 4. Download YOLO ONNX Model
+#### ✅ 4. Download YOLO ONNX Model
 
 Download a YOLO model in ONNX format (e.g., YOLOv5, YOLOv7, or YOLOv8). Pre-trained models are available on YOLOv5 GitHub.
 
 Place the ONNX model file in the models/ directory of this project.
 
-⚙️ Build and Run
+### ⚙️ Build and Run
 
     # Step 1: Clone this repository
     git clone https://github.com/ichsanyudika/realsense_yolo_onnx_runtime.git

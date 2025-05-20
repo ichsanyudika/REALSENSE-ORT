@@ -49,10 +49,10 @@ Place the ONNX model file in the models/ directory of this project.
 ### ⚙️ Build and Run
 
     # Step 1: Clone this repository
-    git clone https://github.com/ichsanyudika/realsense-ort.git
+    git clone https://github.com/ichsanyudika/REALSENSE-ORT.git
     
     # Step 2: Build the application
-    cd realsense-ort
+    cd REALSENSE-ORT
     mkdir build && cd build
     cmake ..
     make

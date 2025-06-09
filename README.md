@@ -1,65 +1,37 @@
-## 🚀 Getting Started
-### 🛠️ Prerequisites
+## Prerequisites
 
-Before you can run the project, you'll need to install a few dependencies and set up your environment.
+- OpenCV with Contrib Modules
+    Follow the installation guide:
+    https://github.com/opencv/opencv_contrib
 
-#### ✅ 1. Install OpenCV with Contrib Modules (C++)
+- Intel RealSense SDK
+    Installation instructions:
+    https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
 
-OpenCV will be used for image processing and object detection tasks
+- ONNX Runtime (C++)
 
-    # Step 1: Install dependencies
-    sudo apt update && sudo apt install -y cmake g++ libgtk-3-dev libtbb-dev
-    
-    # Step 2: Clone OpenCV and Contrib Modules
-    cd ~
-    git clone https://github.com/opencv/opencv.git
-    git clone https://github.com/opencv/opencv_contrib.git
-    
-    # Step 3: Build and Install OpenCV
-    cd opencv && mkdir build && cd build
-    cmake -D CMAKE_BUILD_TYPE=Release \
-          -D CMAKE_INSTALL_PREFIX=/usr/local \
-          -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules ..
-    make -j$(nproc)     
-    sudo make install
-    pkg-config --modversion opencv4
+        wget https://github.com/microsoft/onnxruntime/releases/download/v1.17.0/onnxruntime-linux-x64-dev-1.17.0.tgz
+        tar -xvzf onnxruntime-linux-x64-dev-1.17.0.tgz
+        sudo mv onnxruntime-linux-x64-dev-1.17.0 /opt/onnxruntime
 
-#### ✅ 2. Install Intel RealSense SDK
+- YOLO ONNX Model
+    Download a YOLOv5, YOLOv7, or YOLOv8 model in ONNX format and place it in the models/ directory.
 
-To interact with the RealSense camera, you will need to install the RealSense SDK. Follow the official guide for your platform:
+### Build and Run
 
-👉 Intel RealSense SDK Installation Guide
+        # 1. Clone the repository
+        git clone https://github.com/ichsanyudika/realsense-ort.git
+        
+        # 2. Build the project
+        cd realsense-ort
+        mkdir build && cd build
+        cmake ..
+        make
+        
+        # 3. Run the application
+        ./cam
 
-#### ✅ 3. Install ONNX Runtime
+### Results
 
-ONNX Runtime is used to run the YOLO model in an optimized manner.
+![](output/output.png)
 
-    # Step 1: Install ONNX Runtime dependencies
-    sudo apt install -y libonnxruntime-dev
-    
-    # Step 2: Install ONNX Runtime (optional, Python version)
-    pip install onnxruntime
-
-#### ✅ 4. Download YOLO ONNX Model
-
-Download a YOLO model in ONNX format (e.g., YOLOv5, YOLOv7, or YOLOv8). Pre-trained models are available on YOLOv5 GitHub.
-
-Place the ONNX model file in the models/ directory of this project.
-
-### ⚙️ Build and Run
-
-    # Step 1: Clone this repository
-    git clone https://github.com/ichsanyudika/REALSENSE-ORT.git
-    
-    # Step 2: Build the application
-    cd REALSENSE-ORT
-    mkdir build && cd build
-    cmake ..
-    make
-    
-    # Step 3: Run the application
-    ./cam
-
-#### 📸 **Results**
-
-![](output/output.png) 

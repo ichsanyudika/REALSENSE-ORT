@@ -1,12 +1,8 @@
 ## Prerequisites
 
-- OpenCV with Contrib Modules
-    Follow the installation guide:
-    https://github.com/opencv/opencv_contrib
+- OpenCV with Contrib Modules: https://github.com/opencv/opencv_contrib
 
-- Intel RealSense SDK
-    Installation instructions:
-    https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
+- Intel RealSense SDK : https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
 
 - ONNX Runtime (C++)
 
@@ -14,8 +10,7 @@
         tar -xvzf onnxruntime-linux-x64-dev-1.17.0.tgz
         sudo mv onnxruntime-linux-x64-dev-1.17.0 /opt/onnxruntime
 
-- YOLO ONNX Model
-    Download a YOLOv5, YOLOv7, or YOLOv8 model in ONNX format and place it in the models/ directory.
+- YOLO ONNX Model. Download a YOLOv5, YOLOv7, or YOLOv8 model in ONNX format and place it in the models/ directory.
 
 ### Build and Run
 

@@ -15,10 +15,10 @@
 ### Build and Run
 
         # 1. Clone the repository
-        git clone https://github.com/ichsanyudika/RealSense_ORT.git
+        git clone https://github.com/ichsanyudika/RealSense-Ort.git
         
         # 2. Build the project
-        cd RealSense_ORT
+        cd RealSense-Ort
         mkdir build && cd build
         cmake ..
         make
